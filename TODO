@@ -1,0 +1,21 @@
+//TODO (Future features ideas list)
+
+Classes:
+
+Manager class
+
+
+Algorithms:
+
+- DR
+- Replica exchange
+- Simulated tempering
+- Umbrella sampling (with or without exchange)
+
+Simulation packages
+
+- Gromacs
+- NAMD
+- ...
+
+User templating for simulation parameters
