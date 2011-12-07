@@ -14,6 +14,8 @@ hostip = "127.0.0.1"
 port = 5000
 url = 'http://' + str(hostip) + ":" + str(port) + '/'
 
+# make this into a client test package using Flask Test client
+
 def test_client_post():
     i=0
     while i<2:

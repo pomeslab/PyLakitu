@@ -1,0 +1,23 @@
+Server responsibilities
+- manages data global to the clients (class)
+    - Manager
+- client management
+    - Job
+- data management
+- knows about replica selection strategies (module)
+
+
+Client knows about
+- How to setup an MD simulation run (module)
+- analysis (module)
+    - we haven't really decided on how this will work within our framework
+    
+- At the end of the client loop, send to the server as a post request data and parameters encoding the run that was just performed
+    POST /update_replica/<parameters>
+        - if run was successful, server writes the parameter set sent by the replica to the database
+    GET /next_replica
+        - server responds with parameters for the next simulation to be performed by the client
+
+    (More URLs can be defined ...)
+
+Both the server and client can be configured using an external configuration file
