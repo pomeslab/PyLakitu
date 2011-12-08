@@ -35,6 +35,24 @@ def update_n(temp):
     print "data sent", temp
     return str(temp)
 
+@app.route("/admin/list_jobs")
+def all_jobs():
+    print "all jobs"
+    return list_jobs("all")
+
+@app.route("/admin/list_jobs/<status>")
+def list_jobs(status):
+    print "sent status", status
+    return "status of all jobs"
+
+#@app.route("/admin/stop")
+#def stop():
+#    pass
+#
+#@app.route("/admin/start")
+#def start():
+#    pass
+
 def parse_cmd():
     parser = optparse.OptionParser()
     parser.add_option('-r', '--run-mode', dest='run_mode', default='slave', help="set the running mode of the app")

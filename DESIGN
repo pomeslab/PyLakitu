@@ -21,3 +21,4 @@ Client knows about
     (More URLs can be defined ...)
 
 Both the server and client can be configured using an external configuration file
+

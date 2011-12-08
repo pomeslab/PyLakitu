@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="148873e7-9280-4484-a509-945a8c9e4b2c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DESIGN" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO" afterPath="$PROJECT_DIR$/TODO" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client.py" afterPath="$PROJECT_DIR$/app_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DESIGN" afterPath="$PROJECT_DIR$/DESIGN" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server.py" afterPath="$PROJECT_DIR$/app_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manager.py" afterPath="$PROJECT_DIR$/manager.py" />
     </list>
     <ignored path="PyLakitu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,19 +28,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app_client.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app_client.py">
+      <file leaf-file-name="app_server.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="62" selection-start="291" selection-end="291" vertical-scroll-proportion="0.32831737">
+            <state line="36" column="0" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app_server.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_server.py">
+      <file leaf-file-name="app_server_tests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_server_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+            <state line="31" column="0" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DESIGN" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DESIGN" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DESIGN">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="17" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+            <state line="29" column="0" selection-start="921" selection-end="921" vertical-scroll-proportion="0.59507525">
               <folding />
             </state>
           </provider>
@@ -91,14 +98,14 @@
       <list>
         <option value="$PROJECT_DIR$/logging.py" />
         <option value="$PROJECT_DIR$/admin.py" />
-        <option value="$PROJECT_DIR$/manager.py" />
         <option value="$PROJECT_DIR$/app2.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/app_server.py" />
         <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/DESIGN" />
         <option value="$PROJECT_DIR$/TODO" />
         <option value="$PROJECT_DIR$/app_client.py" />
+        <option value="$PROJECT_DIR$/manager.py" />
+        <option value="$PROJECT_DIR$/app_server.py" />
+        <option value="$PROJECT_DIR$/DESIGN" />
       </list>
     </option>
   </component>
@@ -128,6 +135,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -149,7 +157,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,7 +279,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="22" width="1440" height="878" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -335,47 +342,52 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="58" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="30" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DESIGN">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TODO">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="47" selection-start="528" selection-end="528" vertical-scroll-proportion="0.3488372">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_server_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+        <state line="36" column="0" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_client.py">
+    <entry file="file://$PROJECT_DIR$/DESIGN">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="62" selection-start="291" selection-end="291" vertical-scroll-proportion="0.32831737">
+        <state line="29" column="0" selection-start="921" selection-end="921" vertical-scroll-proportion="0.59507525">
           <folding />
         </state>
       </provider>
