@@ -22,3 +22,62 @@ Client knows about
 
 Both the server and client can be configured using an external configuration file
 
+- Look at SQLalchemy for database writing and accesses
+
+Admin-Server interaction urls:
+Admin is a separate script or module that lets us check on status of jobs, replicas, and the progress of our simulation
+
+GET /admin/list_jobs
+GET /admin/list_jobs/<status>
+GET /admin/job/<job id>
+
+GET /admin/list_replicas
+GET /admin/list_replicas/<status>
+GET /admin/replica/<replica id>
+
+POST /admin/start
+POST /admin/stop
+
+Replica-Server interaction:
+
+Client request urls:
+POST /replica/<replica id>/seq/<sequence id>/new -- requests a new simulation to be started on the client
+(server will respond with files (to be defined in a config file or simulation package specific template) for client to carry out the simulation)
+
+Server handling of this request consists of:
+1) creating a new entry in the replica table for the requested replica and sequence number
+2) updating the status of the last sequence (if it is not the first run) ran by this replica in the database (by updating its finished time stamp and/or the status column)
+
+We discussed whether server or client should manage the files outputted by the client
+    - set a configuration option to indicate whether client and server shares a filesystem
+    - we will implement the case where client server is sharing a file system for now.
+        - if they do not, then client writes all files generated locally, which it then upload to the server as defined by a preconfigured option
+        ( should the server know which files will be uploaded by the client?)
+
+
+To be fleshed out:
+
+Handling of the initial run of the replica set by the server
+
+Error Handling and checking:
+
+Handling replica, job (node) failures.
+
+Replica can fail when (server is up)
+    - the node is terminated due to the wall time (a Job failure)
+    - the node crashed (or entire cluster is down)
+    - the simulation running on the node failed
+
+Job fails when
+    - a replica fails
+    - or server is down
+
+Distinguish between simulation error failure and wall time expiration (signals could come from PBS? eg PBS_WALLTIME exceeded)
+
+what happens when the server does not respond (connection timed out):
+    - this is when the server switching takes place (worry about this, but save it for later!)
+
+
+
+
+
