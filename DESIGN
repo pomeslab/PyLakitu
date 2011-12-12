@@ -80,4 +80,10 @@ what happens when the server does not respond (connection timed out):
 
 
 
+Technologies:
 
+Python
+Flask
+SQLalchemy
+JSON
+SQlite
