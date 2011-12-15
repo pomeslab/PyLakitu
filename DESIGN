@@ -79,6 +79,31 @@ what happens when the server does not respond (connection timed out):
 
 
 
+Models in our app (models can be database backed - that is, the object data held in memory can be persisted to disk)
+
+Job - inherits from sqlalchemy Base
+Replica - inherits from sqlalchemy Base
+Sequence - inherits from sqlalchemy Base
+
+Exchange
+    - in general Exchange can be thought of as a replica monte carlo move attempt
+
+    - Decision: There should be a table corresponding to the Exchange class
+        Exchange will store a set of parameters that will be common to all types of simulations for each replica
+            - What should be stored:
+                   - move attempt probabilities
+                   - DRPE 
+            - the app developer can then extend the Exchange class to add information specific to different enhanced simulation algorithms
+                - additional attributes for algorithm-specific Exchange classes translates into extra columns in our tables.
+
+components:
+
+app configuration:
+- this could be just a config file read into memory or exist as a table in our database (design decision)
+- Initial replica parameters that is fixed.
+
+
+Model associations:
 
 Technologies:
 
