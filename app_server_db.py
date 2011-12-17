@@ -40,7 +40,7 @@ class Replica(Base):
     job_id = Column(Integer, ForeignKey('job.id'))
 
     first_undefined_column = Column(String)
-    second_undefined_column = Column(String
+    second_undefined_column = Column(String)
 
     def __init__(self, first_undefined_column, second_undefined_column):
         self.first_undefined_column = first_undefined_column
