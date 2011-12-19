@@ -1,6 +1,7 @@
-from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
+from sqlalchemy import create_engine, DateTime, Column, Integer, String, Float, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, backref
+import datetime
 
 Base = declarative_base()
 
@@ -39,10 +40,11 @@ class Replica(Base):
     id = Column(Integer, primary_key=True)
     job_id = Column(Integer, ForeignKey('job.id'))
 
-    first_undefined_column = Column(String)
-    second_undefined_column = Column(String)
+    start_time = Column(DateTime)
+    end_time = Column(DateTime)
+    status = Column(String)
+    reaction_coordinate = Column(Float)
 
-    def __init__(self, first_undefined_column, second_undefined_column):
-        self.first_undefined_column = first_undefined_column
-        self.second_undefined_column = second_undefined_column
-
+    def __init__(self, reaction_coordinate):
+        self.reaction_coordinate = reaction_coordinate
+        self.start_time = datetime.now()

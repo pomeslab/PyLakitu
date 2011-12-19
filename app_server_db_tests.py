@@ -22,7 +22,7 @@ class SQLDatabaseTestCase(unittest.TestCase):
         j1 = Job("localhost", "C:/windows/system32/")
 
         #Fill in the relationship field to the replicas
-        j1.replicas=[Replica("item 1","item 2"),Replica("poop 1","poop 2")]
+        j1.replicas=[Replica("0.1"),Replica("0.2")]
 
         #Confirm that the session instance contains no Jobs/Replicas yet
         assert session_instance.query(Job).count() is 0
