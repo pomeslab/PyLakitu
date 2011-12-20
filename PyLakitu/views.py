@@ -5,12 +5,11 @@ import sys
 import threading
 
 import requests
-import flask
+
+from PyLakitu import app
 
 #import logging
 import thread
-
-app = flask.Flask(__name__)
 
 @app.before_request
 def before_request():
@@ -59,7 +58,7 @@ def parse_cmd():
     options, args = parser.parse_args()
     return options
 
-
+'''
 if __name__ == "__main__":
     options = parse_cmd()
 
@@ -71,3 +70,4 @@ if __name__ == "__main__":
 
 
     client.run()
+'''
