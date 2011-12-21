@@ -1,5 +1,5 @@
 import unittest
-import app_server
+from PyLakitu import app
 
 class ServerTestCase(unittest.TestCase):
     '''
@@ -10,7 +10,7 @@ class ServerTestCase(unittest.TestCase):
     '''
     def setUp(self):
         #Initialize a test client to the server
-        self.app = app_server.app.test_client()
+        self.app = app.test_client()
 
     def test_get(self):
         #This tests the routing to the index

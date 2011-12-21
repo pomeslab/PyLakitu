@@ -1,6 +1,6 @@
 import unittest
 from os import remove
-from app_server_models import *
+from PyLakitu.models import *
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
